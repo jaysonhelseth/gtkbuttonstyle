@@ -19,9 +19,10 @@
         <property name="margin-bottom">5</property>
         <property name="row-spacing">15</property>
         <property name="column-spacing">5</property>
+        <signal name="destroy" handler="on_destroy" swapped="no"/>
         <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">button</property>
+          <object class="GtkButton" id="button_one">
+            <property name="label" translatable="yes">One</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
@@ -32,8 +33,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">button</property>
+          <object class="GtkButton" id="button_two">
+            <property name="label" translatable="yes">Two</property>
+            <property name="name">button_two</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
@@ -44,8 +46,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">button</property>
+          <object class="GtkButton" id="button_three">
+            <property name="label" translatable="yes">Three</property>
+            <property name="name">button_three</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
@@ -56,8 +59,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">button</property>
+          <object class="GtkButton" id="button_four">
+            <property name="label" translatable="yes">Four</property>
+            <property name="name">button_four</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>

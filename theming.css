@@ -1,3 +1,41 @@
 .text {
     border-bottom: 1px solid lightgrey;
 }
+
+#button_two {
+    background-color: green;
+    color: white;
+}
+
+#button_three {
+    /* A gradient could be used in the image too. */
+    background-image: image(green);
+    color: white;
+}
+
+#button_three:hover {
+    background-image: image(red);
+    color: white;
+}
+
+/*
+The border, box-shadow and text-shadow properties
+are what cause the button to have blurry text and an
+odd outline. You can play with those properties to
+maybe add some cool glowing effects or something.
+ */
+#button_four {
+    background-image: image(green);
+    color: white;
+    border: transparent;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#button_four:hover {
+    background-image: image(red);
+}
+
+#button_four:active {
+    color: transparent;
+}
